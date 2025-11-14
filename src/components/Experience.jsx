@@ -4,7 +4,7 @@ const Experience = () => {
   const experiences = [
     {
       company: 'CG-VAK Software & Exports',
-      position: 'Software Engineer (Full-Stack .NET & React Developer)',
+      position: 'Software Engineer',
       period: '2023-Present',
       location: 'Coimbatore, India',
       description: `As a Software Engineer at CG-VAK Software & Exports, I specialize in building scalable, high-performance web applications using .NET Core (Web API & MVC), Entity Framework, ReactJS, and SQL Server. I have strong expertise in creating authentication workflows, work-order modules, lookup APIs, and integrating complex services.
@@ -19,8 +19,8 @@ I work confidently with GitHub, Azure DevOps, and modern CI/CD practices. On the
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-12 text-center">Professional Experience</h2>
         
         <div className="space-y-6 md:space-y-8">
-          {experiences.map((exp, expIndex) => (
-            <div key={expIndex} className="bg-gray-50 rounded-lg p-4 md:p-8 shadow-md">
+          {experiences.map((exp) => (
+            <div key={exp.company} className="bg-gray-50 rounded-lg p-4 md:p-8 shadow-md">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 md:mb-6">
                 <div className="mb-4 md:mb-0">
                   <div className="flex items-center gap-3 mb-2">

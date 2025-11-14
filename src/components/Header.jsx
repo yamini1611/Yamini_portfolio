@@ -25,15 +25,22 @@ const Header = ({ scrollY }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
-          <a href="#home" className="text-xl font-bold text-purple-600 font-mono">
-            &lt;Yamini Priya J /&gt;
-          </a>
+          <div className="flex flex-col">
+            <a
+              href="#home"
+              className="text-xl font-bold text-purple-600 font-mono"
+            >
+              &lt;Yamini Priya J /&gt;
+            </a>
+            <span className="text-gray-700 text-sm font-bold ms-3">
+               Software Engineer
+            </span>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">

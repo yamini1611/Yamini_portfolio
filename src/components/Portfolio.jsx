@@ -1,46 +1,30 @@
-import { FaGithub, FaCodeBranch, FaStar } from 'react-icons/fa'
+import { FaCodeBranch } from 'react-icons/fa'
 
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'Integra Asset Hub',
-      description: '🚀 Scalable asset management system built with React.js and ASP.NET Core',
-      language: 'JavaScript',
-      forks: 12,
-      stars: 45,
-      size: '15.2 MB',
-      github: '#'
+      title: 'Integra Asset Management System',
+      description: '🚀 Enterprise-grade scalable asset management platform built with React.js and ASP.NET Core',
+      language: 'TypeScript',
     },
     {
       id: 2,
-      title: 'Facility Conversion',
-      description: '🔥 Responsive React application with .NET APIs and modern UI',
-      language: 'JavaScript',
-      forks: 8,
-      stars: 32,
-      size: '12.5 MB',
-      github: '#'
+      title: 'Facility Management Transformation Platform',
+      description: 'Enterprise facility management solution with responsive React frontend and .NET Core Web APIs',
+      language: 'TypeScript',
     },
     {
       id: 3,
-      title: 'FieldLink Mobile',
-      description: '📱 Cross-platform .NET MAUI mobile application for field data collection',
+      title: 'FieldLink Enterprise Mobile Solution',
+      description: '📱 Cross-platform .NET MAUI mobile application for enterprise field data collection and management',
       language: 'C#',
-      forks: 5,
-      stars: 18,
-      size: '28.3 MB',
-      github: '#'
     },
     {
       id: 4,
-      title: 'E-Commerce Platform',
-      description: '🛒 Full-stack e-commerce solution with React and ASP.NET Core',
-      language: 'JavaScript',
-      forks: 15,
-      stars: 67,
-      size: '22.1 MB',
-      github: '#'
+      title: 'Enterprise E-Commerce Solution',
+      description: '🛒 Full-stack digital commerce platform with React frontend and ASP.NET Core backend',
+      language: 'TypeScript',
     }
   ]
 
@@ -74,15 +58,7 @@ const Portfolio = () => {
                   <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
                   <span>{project.language}</span>
                 </div>
-                <div className="flex items-center gap-1">
-                  <FaCodeBranch className="text-gray-500" />
-                  <span>{project.forks}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <FaStar className="text-yellow-400" />
-                  <span>{project.stars}</span>
-                </div>
-                <span className="text-gray-500">{project.size}</span>
+                
               </div>
             </div>
           ))}

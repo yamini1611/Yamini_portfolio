@@ -1,4 +1,4 @@
-import { FaTools, FaRobot, FaMobile } from 'react-icons/fa'
+import { FaTools, FaRobot, FaMobile, FaProjectDiagram } from 'react-icons/fa'
 import htmlIcon from '../assets/html.png'
 import javascriptIcon from '../assets/javascript.png'
 import reactIcon from '../assets/react.png'
@@ -12,37 +12,43 @@ const Skills = () => {
     {
       title: 'Frontend',
       icon: reactIcon,
-      skills: ['React 19', 'Redux Toolkit', 'PrimeReact', 'Next.js', 'HTML5', 'CSS'],
+      skills: ['React 19', 'Redux Toolkit', 'Next.js', 'HTML5', 'CSS3', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'Responsive Design', 'RESTful APIs', 'State Management'],
       iconType: 'image'
     },
     {
       title: 'Backend',
       icon: dotnetIcon,
-      skills: ['ASP.NET Core', '.NET Core Web API', 'C#', 'Entity Framework'],
+      skills: ['ASP.NET Core', '.NET Core Web API', 'C#', 'Entity Framework', 'RESTful Services', 'Microservices Architecture', 'Authentication & Authorization', 'JWT', 'Dependency Injection', 'Middleware Development'],
       iconType: 'image'
     },
     {
       title: 'Database',
       icon: sqlIcon,
-      skills: ['SQL Server', 'PostgreSQL', 'MySQL', 'SQLite', 'T-SQL', 'Stored Procedures'],
+      skills: ['SQL Server', 'PostgreSQL', 'MySQL', 'SQLite', 'T-SQL', 'Stored Procedures', 'Database Design', 'Query Optimization', 'Data Modeling', 'Database Migration', 'Indexing Strategies'],
       iconType: 'image'
     },
     {
       title: 'Mobile',
       icon: <FaMobile className="text-3xl text-orange-600" />,
-      skills: ['.NET MAUI', 'Cross-platform Development'],
+      skills: ['.NET MAUI', 'Cross-platform Development', 'Mobile UI/UX', 'Offline Data Synchronization', 'Push Notifications'],
       iconType: 'component'
     },
     {
-      title: 'Tools',
+      title: 'Tools & DevOps',
       icon: <FaTools className="text-3xl text-red-600" />,
-      skills: ['Git', 'Azure DevOps', 'Postman', 'Swagger', 'Visual Studio', 'SonarQube', 'Jira', 'Docker'],
+      skills: ['Git', 'Azure DevOps', 'Postman', 'Swagger', 'Visual Studio', 'SonarQube', 'Jira', 'Docker', 'CI/CD Pipelines', 'Version Control', 'Code Review', 'Unit Testing', 'Integration Testing'],
       iconType: 'component'
     },
     {
-      title: 'AI Tools',
+      title: 'AI & Automation',
       icon: <FaRobot className="text-3xl text-indigo-600" />,
-      skills: ['n8n', 'Cursor', 'Local LLMs'],
+      skills: ['GitHub Copilot', 'Cursor', 'Tabnine', 'Codeium', 'Amazon CodeWhisperer', 'Continue.dev', 'v0.dev', 'n8n', 'Workflow Automation'],
+      iconType: 'component'
+    },
+    {
+      title: 'Methodologies',
+      icon: <FaProjectDiagram className="text-3xl text-blue-600" />,
+      skills: ['Agile/Scrum', 'SDLC', 'Code Review', 'Technical Documentation', 'Problem Solving', 'System Architecture', 'Performance Optimization'],
       iconType: 'component'
     }
   ]

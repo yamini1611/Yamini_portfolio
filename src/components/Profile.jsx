@@ -40,14 +40,15 @@ const Profile = () => {
           <div className="order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">What I do</h2>
             
-            <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-8 leading-relaxed">
-            Curious Full-Stack Developer always exploring new technologies.            </p>
+            <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
+            I develop end-to-end web applications using .NET, React, and SQL.
+            Focused on performance, scalability, and clean engineering.            </p>
 
             {/* Tech Icons Grid */}
-            <div className="grid grid-cols-7 gap-3 mb-6 md:mb-10">
-              {techIcons.map((tech, index) => (
+            <div className="grid grid-cols-4 sm:grid-cols-7 gap-3 mb-6 md:mb-10">
+              {techIcons.map((tech) => (
                 <div
-                  key={index}
+                  key={tech.name}
                   className="w-14 h-14 bg-white border-2 border-gray-200 rounded-lg flex items-center justify-center hover:border-purple-400 hover:shadow-md transition-all p-2 group"
                   title={tech.name}
                 >
@@ -63,24 +64,39 @@ const Profile = () => {
             </div>
 
             {/* Key Points */}
-            <div className="space-y-3 md:space-y-5">
+            <div className="space-y-4 md:space-y-5">
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700 leading-relaxed">
-                  Develop highly interactive Front end / User Interfaces for your web and mobile applications
-                </p>
+                <div>
+                  <p className="text-gray-700 leading-relaxed font-medium mb-1">
+                    Backend API Development & Authentication
+                  </p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Building RESTful APIs using ASP.NET Core with JWT authentication and secure authorization mechanisms.
+                  </p>
+                </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700 leading-relaxed">
-                  Progressive Web Applications ( PWA ) in normal and SPA Stacks
-                </p>
+                <div>
+                  <p className="text-gray-700 leading-relaxed font-medium mb-1">
+                    Frontend & Mobile Development
+                  </p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Creating interactive and responsive user interfaces for web and mobile applications using React and .NET MAUI.
+                  </p>
+                </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700 leading-relaxed">
-                  Integration of third party services such as Firebase/ AWS / Azure
-                </p>
+                <div>
+                  <p className="text-gray-700 leading-relaxed font-medium mb-1">
+                    Progressive Web Applications & SPAs
+                  </p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Developing PWAs and SPAs with optimized performance, offline capabilities, and seamless user interactions.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
